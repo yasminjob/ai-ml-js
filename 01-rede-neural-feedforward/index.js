@@ -104,3 +104,4 @@ function feedForward(inputs=[], target=0, epochs=1, activation='tanh'){
 
 //executando o neurônio
 feedForward([0], 0.1, 800, 'relu');
+//entrada, saída esperada, número de épocas (rodadas do algorítimo) e função de ativação
