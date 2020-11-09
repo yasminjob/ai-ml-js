@@ -1,13 +1,17 @@
 const Mind = require('node-mind');
 
 const config = {
-	iterations: 5000,
-	learningRate: .7,
-	activator: 'sigmoid' // htan
+	iterations: 5000, //épocas de treinamento
+	learningRate: .7, //taxa de aprendizagem
+	activator: 'sigmoid' //função de ativação
+	//as únicas funções disponíveis são: htan e sigmoid
+	//sempre que os dados de treinamento seja 0 e 1, a função + indicada é a sigmoid
+	//ela sempre retornara valores entre 0 e 1
 };
 
 const mind = new Mind(config);
 
+//treinamento
 mind.learn([
 	{input: [0, 0], output: [0]},
 	{input: [0, 1], output: [0]},

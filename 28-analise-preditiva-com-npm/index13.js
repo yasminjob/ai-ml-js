@@ -4,8 +4,8 @@ const config = {
 	iterations: 5000,
 	learningRate: .7,
 	activator: 'sigmoid', // htan
-	hiddenLayers: 1,
-	hiddenUnits: 4
+	hiddenLayers: 1, //camada oculta
+	hiddenUnits: 4 //nós da camada oculta
 };
 
 const mind = new Mind(config);

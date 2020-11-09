@@ -10,7 +10,7 @@ net.train([
 	{input: [1, 1], output: [0]}
 ]);
 
-const json = net.toJSON();
-const path = './model-xor.json';
-fs.writeFileSync(path, JSON.stringify(json));
-if(fs.existsSync(path)) console.log('modelo salvo com sucesso.');
+const json = net.toJSON(); //converte para o formato json
+const path = './model-xor.json'; //caminho para salvar o modelo
+fs.writeFileSync(path, JSON.stringify(json)); //escreve no arquivo o json
+if(fs.existsSync(path)) console.log('modelo salvo com sucesso.'); //verifica se o modelo existe
